@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <h1>Itunes Top of the Charts</h1>
+      <h1>Top of the Charts</h1>
       <ChartContainer />
     </div>
   );

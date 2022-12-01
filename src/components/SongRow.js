@@ -1,18 +1,23 @@
 import React from "react";
 import './SongRow.css';
-const SongRow = ({ song, index }) => {
-
+const SongRow = ({ title, artist, position, image, audio}) => {
+    const altTag = `${title} by ${artist}`;
 
     return (
         <li >
             <div>
-                {index + 1}.
+                {position}.
             </div>
             <div>
-                <img src={song["im:image"][0]["label"]} alt="image" />
+                <img src={image} alt={altTag} />
             </div>
             <div>
-                {song["im:name"]["label"]} by {song["im:artist"]["label"]}
+                {title} by {artist}
+            </div>
+            <div>
+                <audio   id="media-player" controls>
+                    <source src={audio} type="audio/mpeg"></source>
+                </audio>
             </div>
         
         </li>
