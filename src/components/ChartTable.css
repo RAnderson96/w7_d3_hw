@@ -1,0 +1,11 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* width: 40%;
+    /* width: 40%; */
+}
